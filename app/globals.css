@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --font-display:
+    "Blacker Pro Display", "Blacker Pro Display Regular", "Blacker Pro",
+    Georgia, serif;
+  --background: #f7f6f1;
+  --foreground: #10302d;
+  --surface: #fffdf8;
+  --surface-strong: #f0ece2;
+  --brand: #0a6460;
+  --brand-deep: #084744;
+  --brand-soft: #d8ebe7;
+  --border: rgba(16, 48, 45, 0.12);
+  --muted: #5d716d;
+  --shadow: 0 24px 70px rgba(8, 71, 68, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(216, 235, 231, 0.9), transparent 30%),
+    radial-gradient(circle at 85% 15%, rgba(10, 100, 96, 0.08), transparent 22%),
+    radial-gradient(circle at 15% 78%, rgba(8, 71, 68, 0.06), transparent 20%),
+    linear-gradient(180deg, #fcfbf7 0%, var(--background) 100%);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: rgba(10, 100, 96, 0.16);
+}
